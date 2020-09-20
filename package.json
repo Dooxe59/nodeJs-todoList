@@ -1,0 +1,14 @@
+{
+  "name": "node-todo-list",
+  "version": "1.0.0",
+  "description": "NodeJs todo list",
+  "main": "index.js",
+  "author": "Anthony Ruelle",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-session": "^1.4.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
