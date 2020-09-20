@@ -12,14 +12,18 @@
     <span>Rien dans la todo list :)</span>
     <% } %>
     <% todolist.forEach((item, index) => { %>
-    <li>
-      <form action="/todo/delete/<%= index %>">
-        <input type="submit" value="Supprimer" /> - <%= item %>
+    <li style="display: flex;">
+      <form method="POST" action="/todo/update/<%= index %>">
+        <input type="text" name="updatedItem" id="updatedItem" value="<%= item %>" />
+        <input type="submit" value="Modifier" style="margin: 0 10px;" />
+      </form>
+      <form method="POST" action="/todo/delete/<%= index %>">
+        <input type="submit" value="Supprimer" />
       </form>
     </li>
     <% }); %>
   </ul>
-  <form action="/todo/add/" method="post">
+  <form method="POST" action="/todo/add/">
     <label for="newItem">Item à ajouter: </label>
     <input type="text" name="newItem" id="newItem" required />
     <input type="submit" value="Ajouter" />

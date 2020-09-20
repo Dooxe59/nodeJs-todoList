@@ -5,7 +5,6 @@ Technos:
 NodeJs + ExpressJs + ejs
 
 ### ToDo list:
-- Update todo item
 - Reorder items
 - Export csv
 - Set priority 
